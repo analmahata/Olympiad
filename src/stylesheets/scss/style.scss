@@ -1,0 +1,77 @@
+/*------<====| Import / link all font styles |====>------*/
+@use './imports/fonts/fonts' as *;
+
+/*------<====| Import base |====>------*/
+@use './imports/base/base' as *;
+
+/*------<====| Link colors |====>------*/
+@use './imports/colors/colors' as *;
+
+/*------<====| Dark mode |====>------*/
+@use './imports/themes/dark-theme' as *;
+
+@use './imports/custom/buttons' as *;
+
+/*------<====| Import custom header style |====>------*/
+@use './imports/custom/header' as *;
+
+/*------<====| Import all custom colors and shades |====>------*/
+:root {
+    /*----------< colors >----------*/
+    @each $colors, $value in $colors {
+        --clr-#{$colors}: #{$value};
+    }
+
+    // /*----------< shades >----------*/
+    // @each $color, $shades in $shades {
+    //     @each $shade, $value in $shades {
+    //         --clr-#{$color}-#{$shade}: #{$value};
+    //     }
+    // }
+}
+
+
+:root {
+    --body-bg-color: #e5ecef;
+    --theme-bg-color: #fff;
+    --input-bg: #f8f8fa;
+    --border-color: #eef2f4;
+    --body-color: #273346;
+    --settings-icon-color: #c1c7cd;
+    --msg-message: #969eaa;
+    --chat-text-bg: #f1f2f6;
+    --button-bg-color: #f0f7ff;
+    --detail-font-color: #919ca2;
+
+    --clr-primary: var(--clr-green);
+
+    --hover-transition: 0.6s;
+
+
+    --box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+    //--box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    --background-image: radial-gradient(circle at 57% 36%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, rgba(145,145,145, 0.04) 0%, rgba(145,145,145, 0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(242,242,242),rgb(242,242,242));
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+/*------- Custom -------*/
+
+a {
+    font-size: .9rem;
+    color: var(--chat-text-color);
+}
+
+
+
+
+
