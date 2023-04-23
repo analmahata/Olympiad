@@ -15,12 +15,12 @@ $dark-mode: (
 );
 
 .dark-mode {
-    --body-bg-color: #1d1d1d;
-    --theme-bg-color: #27292d;
-    --border-color: #323336;
+    --clr-bg1: #1d1d1d;
+    --clr-bg2: #27292d;
+    --clr-border: #323336;
     --body-color: #d1d1d2;
     --chat-text-bg: #383b40;
-    --chat-text-color: #b5b7ba;
+    --text-color: #b5b7ba;
     --settings-icon-color: #7c7e80;
 
     --background-image:  radial-gradient(circle at 57% 36%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, rgba(57,56,56, 0.1) 0%, rgba(57,56,56, 0.1) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(33,33,33),rgb(33,33,33));

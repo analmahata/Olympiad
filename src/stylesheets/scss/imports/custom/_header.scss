@@ -6,8 +6,8 @@
     z-index: 11111;
     height: 4rem;
     align-items: center;
-    background-color: var(--theme-bg-color);
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--clr-bg2);
+    border-bottom: 1px solid var(--clr-border);
 
     -webkit-box-shadow: 0 1px 14px rgba(80, 87, 99, 0.3);
     -moz-box-shadow: 0 1px 14px rgba(80, 87, 99, 0.3);
@@ -34,8 +34,10 @@
             .header_logo_txt {
                 a {
                     h2 {
+                        letter-spacing: .05rem;
+                        font-size: 1.5rem;
                         font-weight: 900;
-                        color: #57dea3;
+                        color: var(--clr-primary);
                         font-family: 'Montserrat', Montserrat, monospace;
                     }
                 }
@@ -88,7 +90,7 @@
                         border-radius: 0.5rem;
                         display: none;
                         position: absolute;
-                        background-color: var(--theme-bg-color);
+                        background-color: var(--clr-bg2);
                         min-width: 160px;
                         box-shadow: var(--box-shadow);
                         z-index: 1;
@@ -101,11 +103,11 @@
                             padding: 12px 16px;
                             text-decoration: none;
                             display: block;
-                            color: var(--chat-text-color);
+                            color: var(--text-color);
                             font-family: 'Manrope', Montserrat, monospace;
 
                             &:hover {
-                                background-color: var(--body-bg-color);
+                                background-color: var(--clr-bg1);
                                 color: var(--clr-primary);
                             }
                         }
@@ -136,6 +138,7 @@
                         padding: .6rem;
                         border-radius: .3rem;
                         transition: 0.5s;
+                        color: var(--text-color);
 
                         &:hover {
                             background-color: var(--chat-text-bg);
@@ -188,7 +191,7 @@
 
         &:hover {
             fill: transparent;
-            stroke: var(--chat-text-color);
+            stroke: var(--text-color);
         }
     }
 }

@@ -1,0 +1,27 @@
+.registerBtn {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.6rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--clr-white);
+    background: var(--clr-primary);
+    border-radius: .35rem;
+    transition: var(--btn-transiction);
+    text-decoration: none;
+    border: none;
+    transition: all .5s;
+    font-family: 'Montserrat', Montserrat, monospace;
+
+    &:hover{
+        border-radius: 2rem;
+        background: var(--clr-secondary);
+        border-radius: 6rem;
+    }
+}
